@@ -101,6 +101,7 @@ export default class HomeController extends Controller {
     ctx.service.users.update(id, payload);
     this.success({});
   }
+
   public async destroy() {
     const { ctx } = this;
     const { id } = ctx.params;
